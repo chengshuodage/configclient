@@ -5,3 +5,11 @@ spring:
     config:
       uri: http://localhost:8080
       profile: local
+#手动更新配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health
+
+
